@@ -20,6 +20,8 @@ import lime.app.Application;
 import Achievements;
 import editors.MasterEditorMenu;
 import flixel.input.keyboard.FlxKey;
+import WeekData;
+import flixel.util.FlxTimer;
 
 using StringTools;
 
@@ -32,6 +34,14 @@ class MainMenuState extends MusicBeatState
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
 	
+
+    //stuff from storymenustate
+    
+	private static var lastDifficultyName:String = '';
+	var curDifficulty:Int = 1;
+	private static var curWeek:Int = 0;
+	var loadedWeeks:Array<WeekData> = [];
+
 	var optionShit:Array<String> = [
 		'story_mode',
 		'freeplay',
@@ -49,6 +59,32 @@ class MainMenuState extends MusicBeatState
 
 	override function create()
 	{
+		
+		//more storymenustate stuff
+		PlayState.isStoryMode = true;
+		WeekData.reloadWeekFiles(true);
+		if(curWeek >= WeekData.weeksList.length) curWeek = 0;
+		
+        var num:Int = 0;
+		for (i in 0...WeekData.weeksList.length)
+		{
+			var weekFile:WeekData = WeekData.weeksLoaded.get(WeekData.weeksList[i]);
+			{
+				loadedWeeks.push(weekFile);
+				WeekData.setDirectoryFromWeek(weekFile);
+			}
+		}
+
+        CoolUtil.difficulties = CoolUtil.defaultDifficulties.copy();
+		if(lastDifficultyName == '')
+		{
+			lastDifficultyName = CoolUtil.defaultDifficulty;
+		}
+		curDifficulty = Math.round(Math.max(0, CoolUtil.defaultDifficulties.indexOf(lastDifficultyName)));
+
+		if (curWeek < 0)
+			curWeek = loadedWeeks.length - 1;
+
 		#if MODS_ALLOWED
 		Paths.pushGlobalMods();
 		#end
@@ -236,7 +272,7 @@ class MainMenuState extends MusicBeatState
 								switch (daChoice)
 								{
 									case 'story_mode':
-										MusicBeatState.switchState(new StoryMenuState());
+										selectWeek();
 									case 'freeplay':
 										MusicBeatState.switchState(new FreeplayState());
 									#if MODS_ALLOWED
@@ -298,4 +334,33 @@ class MainMenuState extends MusicBeatState
 			}
 		});
 	}
+
+var selectedWeek:Bool = false;
+
+function selectWeek()
+        {   // We can't use Dynamic Array .copy() because that crashes HTML5, here's a workaround.
+			var songArray:Array<String> = [];
+			var leWeek:Array<Dynamic> = loadedWeeks[curWeek].songs;
+			for (i in 0...leWeek.length) {
+				songArray.push(leWeek[i][0]);
+			}
+
+			// Nevermind that's stupid lmao
+			PlayState.storyPlaylist = songArray;
+			PlayState.isStoryMode = true;
+			selectedWeek = true;
+
+			var diffic = CoolUtil.getDifficultyFilePath(curDifficulty);
+			if(diffic == null) diffic = '';
+
+			PlayState.storyDifficulty = curDifficulty;
+
+			PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase() + diffic, PlayState.storyPlaylist[0].toLowerCase());
+			PlayState.campaignScore = 0;
+			PlayState.campaignMisses = 0;
+			{
+				LoadingState.loadAndSwitchState(new PlayState(), true);
+				FreeplayState.destroyFreeplayVocals();
+			};
+		}
 }
