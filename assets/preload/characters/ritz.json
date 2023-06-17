@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				19,
+				-53
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				47,
+				23
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				22,
+				-4
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "hey",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				53,
+				-26
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				25,
+				1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/ritz",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "ritz",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		133,
+		43
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

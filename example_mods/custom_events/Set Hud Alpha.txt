@@ -1,0 +1,5 @@
+Sets the alpha value for camHUD
+
+Value 1: Alpha Value (0 is invisible, 1 is visible)
+
+Value 2: Duration

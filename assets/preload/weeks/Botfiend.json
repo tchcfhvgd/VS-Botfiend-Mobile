@@ -1,0 +1,41 @@
+{
+	"storyName": "placeholder",
+	"difficulties": "Normal",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Cyberbolt",
+			"bot",
+			[
+				243,
+				87,
+				75
+			]
+		],
+		[
+			"Kilowatt",
+			"bot",
+			[
+				243,
+				87,
+				75
+			]
+		]
+	],
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Vs Botfriend"
+}
