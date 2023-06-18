@@ -3,14 +3,18 @@
 	"difficulties": "Normal",
 	"hideFreeplay": false,
 	"weekBackground": "stage",
-	"weekBefore": "",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
+	"weekBefore": "",
 	"startUnlocked": true,
-	"hideStoryMode": false,
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
 	"songs": [
 		[
 			"Cyberbolt",
@@ -29,13 +33,18 @@
 				87,
 				75
 			]
+		],
+		[
+			"Future Link",
+			"bot",
+			[
+				243,
+				87,
+				75
+			]
 		]
 	],
-	"weekCharacters": [
-		"dad",
-		"bf",
-		"gf"
-	],
-	"hiddenUntilUnlocked": false,
-	"weekName": "Vs Botfriend"
+	"hideStoryMode": false,
+	"weekName": "Vs Botfriend",
+	"hiddenUntilUnlocked": false
 }

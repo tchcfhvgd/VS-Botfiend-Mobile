@@ -133,6 +133,7 @@ class MainMenuState extends MusicBeatState
 		botfiend.animation.addByPrefix('chill', "Idle", 24);
 		botfiend.animation.addByPrefix('Yeah', "Confirm", 24, false);
 		botfiend.animation.play('chill');
+		botfiend.offset.set(0, 0);
 		botfiend.antialiasing = ClientPrefs.globalAntialiasing;
 		botfiend.updateHitbox();
 		add(botfiend);
@@ -250,6 +251,7 @@ class MainMenuState extends MusicBeatState
 					selectedSomethin = true;
 					FlxG.sound.play(Paths.sound('confirmMenu'));
                     botfiend.animation.play('Yeah');
+					botfiend.offset.set(0, 25);
 					menuItems.forEach(function(spr:FlxSprite)
 					{
 						if (curSelected != spr.ID)
