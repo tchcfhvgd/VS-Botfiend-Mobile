@@ -43,12 +43,22 @@ end
 
 function onUpdate(elapsed)
 if curStep > 239 and curStep < 250 and songName == 'Cyberbolt' then
-setProperty('camZooming',false)
+setProperty('camZooming', false)
 elseif curStep > 250 and curStep < 765 and songName == 'Cyberbolt' then
 setProperty('camZooming', true)
 elseif curStep > 765 and curStep < 782 and songName == 'Cyberbolt' then
-setProperty('camZooming',false)
-elseif curStep > 782 and songName == 'Cyberbolt' then
+setProperty('camZooming', false)
+elseif curStep > 782 and curStep < 1530 and songName == 'Cyberbolt' then
 setProperty('camZooming', true)
+elseif curStep > 1530 and curStep < 1550 and songName == 'Cyberbolt' then
+setProperty('camZooming', false)
+print('faggot');
 end
-end 
+end
+
+function onEvent(name, value1, value2)
+	if name == 'White Flash' then
+	addLuaSprite('blue', true);
+	addLuaSprite('rains', true);
+	end
+end

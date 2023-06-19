@@ -36,7 +36,7 @@
 		{
 			"loop": false,
 			"offsets": [
-				55,
+				54,
 				-3
 			],
 			"anim": "singLEFT-alt",
@@ -81,7 +81,7 @@
 			"loop": false,
 			"offsets": [
 				75,
-				33
+				34
 			],
 			"anim": "singUP-alt",
 			"fps": 24,
@@ -120,6 +120,17 @@
 			"anim": "hey",
 			"indices": [],
 			"name": "hey"
+		},
+		{
+			"offsets": [
+				0,
+				-1
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "bout",
+			"loop": true,
+			"name": "uhoh"
 		}
 	],
 	"no_antialiasing": false,
