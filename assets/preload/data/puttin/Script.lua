@@ -1,4 +1,3 @@
-function onGameOver()
-	triggerEvent('Change Character', 0, 'botfriend-death');
-	return Function_Continue;
+function onCreate()
+	setPropertyFromClass('GameOverSubstate', 'characterName', 'botfrienddead');
 end
