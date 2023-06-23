@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="LogoBumping.png">
+	<!-- Created with Adobe Animate version 21.0.3.38773 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Bumping0000" x="0" y="0" width="882" height="661"/>
+	<SubTexture name="Bumping0001" x="0" y="0" width="882" height="661"/>
+	<SubTexture name="Bumping0002" x="892" y="0" width="834" height="626" frameX="-24" frameY="-17" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0003" x="892" y="0" width="834" height="626" frameX="-24" frameY="-17" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0004" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0005" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0006" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0007" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0008" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0009" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0010" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0011" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0012" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0013" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0014" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0015" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0016" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0017" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0018" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0019" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0020" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0021" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0022" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0023" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0024" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0025" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0026" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0027" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0028" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+	<SubTexture name="Bumping0029" x="0" y="671" width="817" height="612" frameX="-33" frameY="-24" frameWidth="882" frameHeight="661"/>
+</TextureAtlas>

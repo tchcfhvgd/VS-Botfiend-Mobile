@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="botftitle.png">
+	<!-- Created with Adobe Animate version 21.0.3.38773 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idlebot0000" x="0" y="0" width="455" height="518" frameX="-10" frameY="-31" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0001" x="0" y="0" width="455" height="518" frameX="-10" frameY="-31" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0002" x="465" y="0" width="451" height="483" frameX="-11" frameY="-64" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0003" x="465" y="0" width="451" height="483" frameX="-11" frameY="-64" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0004" x="926" y="0" width="452" height="505" frameX="-11" frameY="-43" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0005" x="926" y="0" width="452" height="505" frameX="-11" frameY="-43" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0006" x="1388" y="0" width="452" height="505" frameX="-11" frameY="-43" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0007" x="1388" y="0" width="452" height="505" frameX="-11" frameY="-43" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0008" x="1388" y="0" width="452" height="505" frameX="-11" frameY="-43" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0009" x="1388" y="0" width="452" height="505" frameX="-11" frameY="-43" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0010" x="1388" y="0" width="452" height="505" frameX="-11" frameY="-43" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0011" x="1388" y="0" width="452" height="505" frameX="-11" frameY="-43" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0012" x="1388" y="0" width="452" height="505" frameX="-11" frameY="-43" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0013" x="1388" y="0" width="452" height="505" frameX="-11" frameY="-43" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0014" x="1388" y="0" width="452" height="505" frameX="-11" frameY="-43" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0015" x="0" y="528" width="424" height="533" frameX="0" frameY="-25" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0016" x="0" y="528" width="424" height="533" frameX="0" frameY="-25" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0017" x="434" y="528" width="436" height="556" frameX="-4" frameY="0" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0018" x="434" y="528" width="436" height="556" frameX="-4" frameY="0" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0019" x="880" y="528" width="433" height="548" frameX="-4" frameY="-9" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0020" x="880" y="528" width="433" height="548" frameX="-4" frameY="-9" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0021" x="1323" y="528" width="433" height="549" frameX="-4" frameY="-8" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0022" x="1323" y="528" width="433" height="549" frameX="-4" frameY="-8" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0023" x="1323" y="528" width="433" height="549" frameX="-4" frameY="-8" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0024" x="1323" y="528" width="433" height="549" frameX="-4" frameY="-8" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0025" x="1323" y="528" width="433" height="549" frameX="-4" frameY="-8" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0026" x="1323" y="528" width="433" height="549" frameX="-4" frameY="-8" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0027" x="1323" y="528" width="433" height="549" frameX="-4" frameY="-8" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0028" x="1323" y="528" width="433" height="549" frameX="-4" frameY="-8" frameWidth="465" frameHeight="558"/>
+	<SubTexture name="idlebot0029" x="1323" y="528" width="433" height="549" frameX="-4" frameY="-8" frameWidth="465" frameHeight="558"/>
+</TextureAtlas>
