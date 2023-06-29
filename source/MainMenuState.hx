@@ -355,7 +355,7 @@ function selectWeek()
 			PlayState.campaignScore = 0;
 			PlayState.campaignMisses = 0;
 			{
-				LoadingState.loadAndSwitchState(new PlayState(), true);
+				LoadingState.loadAndSwitchState(new PreSongCutscene(), true);
 				FreeplayState.destroyFreeplayVocals();
 			};
 		}
