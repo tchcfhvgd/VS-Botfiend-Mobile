@@ -30,7 +30,7 @@ class PreSongCutscene extends FlxState
 
 		video.updateHitbox();
 		video.setPosition(0,0);
-
+        video.antialiasing = ClientPrefs.globalAntialiasing;
 		add(video);
 	}
 

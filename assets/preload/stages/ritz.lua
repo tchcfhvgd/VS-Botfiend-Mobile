@@ -12,3 +12,10 @@ function onCreate()
 	addLuaSprite('FG', false);
 	
 end
+
+function onStepHit()
+if curStep == 876 then
+triggerEvent('Hey!', 'GF', '');
+setProperty("defaultCamZoom",0.6)
+end
+end
