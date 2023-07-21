@@ -84,11 +84,12 @@ class CreditsState extends MusicBeatState
 			['VS Botfiend Team'],
 			['Humbay',		'humbay',		'Creator, Main Artist/Animator',								'https://twitter.com/HumbayNoob',	'C0140D'],
 			['Jbug',			'jbug',			'Designer of Botfiend',							'https://www.youtube.com/@JBUG/',		'FFFFFF'],
+			['Komie',				'komie',			'Logo designer',						'https://twitter.com/whoisKomica',			'FF5300'],
 			['Orbyy',			'orbyy',			'Coder and Charter',							'https://twitter.com/OrbyyNew',		'74C6E4'],
+			['Clover',				'clover',			'Charter',						'https://twitter.com/Cloverderus',			'34B913'],
 			['Krea',				'krea',			'Composed Cyberbolt and Future Link',						'https://twitter.com/Kreagato',			'805228'],
 			['Toad',				'toad',			'Composed Kilowatt',						'https://twitter.com/OdysseyToad',			'A4FFFF'],
-			['Keegan',				'keegan',			'Composed Puttin',						'https://twitter.com/__Keegan_',			'FF3300'],
-			['Komie',				'komie',			'Logo designer',						'https://twitter.com/whoisKomica',			'FF5300']
+			['Keegan',				'keegan',			'Composed Puttin',						'https://twitter.com/__Keegan_',			'FF3300']
 		];
 		
 		for(i in pisspoop){
