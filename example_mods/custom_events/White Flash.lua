@@ -19,8 +19,9 @@ end
 
 function onCreate()
 makeLuaSprite('white', nil, -225, -100);
-		makeGraphic('white', screenWidth * 5, screenHeight * 5, 'FFFFFF');
+		makeGraphic('white', screenWidth * 7, screenHeight * 7, 'FFFFFF');
 		setScrollFactor('white', 0, 0)
 		addLuaSprite('white', true);
 	setProperty('white.alpha', 0);
-	end		
+	setObjectCamera('white', 'hud')
+end		
