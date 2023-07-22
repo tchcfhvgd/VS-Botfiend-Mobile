@@ -691,12 +691,6 @@
 						0
 					],
 					[
-						25263.1578947369,
-						7,
-						197.368421052632,
-						"Trail Note Invisible"
-					],
-					[
 						26447.3684210526,
 						1,
 						0
@@ -711,13 +705,13 @@
 						28026.3157894737,
 						0,
 						296.052631578947,
-						"Trail Note"
+						"Trail Note Invisible"
 					],
 					[
 						27631.5789473684,
 						2,
 						296.052631578947,
-						"Trail Note"
+						"Trail Note Invisible"
 					],
 					[
 						26842.1052631579,
@@ -854,7 +848,7 @@
 						28421.052631579,
 						6,
 						197.368421052632,
-						"Trail Note"
+						"Trail Note Invisible"
 					]
 				],
 				"mustHitSection": true
@@ -3160,13 +3154,13 @@
 						80131.5789473684,
 						0,
 						296.052631578947,
-						"Trail Note"
+						"Trail Note Invisible"
 					],
 					[
 						79736.8421052631,
 						2,
 						296.052631578947,
-						"Trail Note"
+						"Trail Note Invisible"
 					],
 					[
 						78947.3684210526,
@@ -3303,7 +3297,7 @@
 						80526.3157894737,
 						6,
 						197.368421052632,
-						"Trail Note"
+						"Trail Note Invisible"
 					]
 				],
 				"mustHitSection": true
