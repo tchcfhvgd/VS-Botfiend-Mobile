@@ -20,11 +20,10 @@ function onCreate()
 	setBlendMode('blue', 'multiply')
 	
 	makeAnimatedLuaSprite('rains', 'botfriend/rain', -2000, -1500);
-	setScrollFactor('rains', 1.0, 1.0);
+	setScrollFactor('rains', 0, 0);
 	scaleObject('rains', 1.0, 1.0);
 	addAnimationByPrefix('rains', 'raining', 'Rain', 24, true)
 	playAnim('rains', 'raining')
-	setObjectCamera('rains', 'hud')
 	setProperty('rains.alpha', 0.20);
 	setBlendMode('rains', 'add')
 	
@@ -44,6 +43,12 @@ function onCreatePost()--rain is there from the start on future link
     if songPath == 'future-link' then
 	addLuaSprite('blue', true);
 	addLuaSprite('rains', true);
+	end
+	if songPath == 'kilowatt' then
+	addLuaSprite('blue', true);
+	addLuaSprite('rains', true);
+	setObjectOrder('blue', getObjectOrder('wall')-1)
+	setObjectOrder('rains', getObjectOrder('wall')-1)
     end
 end
 

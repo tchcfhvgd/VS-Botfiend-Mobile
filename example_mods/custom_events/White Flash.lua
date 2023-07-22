@@ -12,8 +12,8 @@ function onEvent(name, value1, value2)
 			setProperty('white.alpha', targetAlpha);
 		else
 			doTweenAlpha('whiteFadeEventTween', 'white', targetAlpha, duration, 'linear');
-			addLuaSprite('blue', true);
-	        addLuaSprite('rains', true);
+			setObjectOrder('blue', getObjectOrder('Garbage Group 2')+1)
+	        setObjectOrder('rains', getObjectOrder('blue')+1)
 		end
 		--debugPrint('Event triggered: ', name, duration, targetAlpha);
 	end

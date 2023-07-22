@@ -1,6 +1,6 @@
 {
 	"storyName": "Botfiend Freeplay",
-	"difficulties": "",
+	"difficulties": "Normal",
 	"hideFreeplay": false,
 	"weekBackground": "stage",
 	"weekBefore": "tutorial",

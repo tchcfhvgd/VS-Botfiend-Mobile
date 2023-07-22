@@ -42,7 +42,8 @@ function onTimerCompleted(tag, loops, loopsLeft)
 end
 
 function onEndSong()
-        if not cool then
+        doTweenAlpha('hudgobye', 'camHUD', 0, 0.5, 'easeIn')
+		if not cool and isStoryMode then
 			playSound('uh oh');
 			runTimer('die', 3.85);
 			runTimer('sus', 8);
