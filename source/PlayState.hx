@@ -2983,11 +2983,6 @@ class PlayState extends MusicBeatState
 				openPauseMenu();
 			}
 		}
-        
-		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene)
-			{
-				openChartEditor();
-			}	
 
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
 		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);

@@ -16,7 +16,7 @@ function onCreate()
 	scaleObject('Garbage Group 2', 1.0, 1.0);
 	
 	makeLuaSprite('blue', nil, -500, -100);
-	makeGraphic('blue', 3000, 1080, 'B7BBF0')
+	makeGraphic('blue', 2750, 1080, 'B7BBF0')
 	setBlendMode('blue', 'multiply')
 	
 	makeAnimatedLuaSprite('rains', 'botfriend/rain', -2000, -1500);
@@ -27,6 +27,12 @@ function onCreate()
 	setObjectCamera('rains', 'hud')
 	setProperty('rains.alpha', 0.20);
 	setBlendMode('rains', 'add')
+	
+	makeAnimatedLuaSprite('boom', 'botfriend/Explosion', 150, 250);
+	setScrollFactor('boom', 1.0, 1.0);
+	scaleObject('boom', 6.0, 6.0);
+	addAnimationByPrefix('boom', 'death', 'explosion', 24, false)
+	playAnim('boom', 'death')
 	
 	addLuaSprite('Wall', false);
 	addLuaSprite('Garbage Bin', false);
