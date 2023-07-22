@@ -16,7 +16,7 @@ function onCreate()
 	scaleObject('Garbage Group 2', 1.0, 1.0);
 	
 	makeLuaSprite('blue', nil, -500, -100);
-	makeGraphic('blue', 2500, 1080, 'B7BBF0')
+	makeGraphic('blue', 3000, 1080, 'B7BBF0')
 	setBlendMode('blue', 'multiply')
 	
 	makeAnimatedLuaSprite('rains', 'botfriend/rain', -2000, -1500);
@@ -54,11 +54,4 @@ elseif curStep > 1530 and curStep < 1550 and songName == 'Cyberbolt' then
 setProperty('camZooming', false)
 print('faggot');
 end
-end
-
-function onEvent(name, value1, value2)
-	if name == 'White Flash' then
-	addLuaSprite('blue', true);
-	addLuaSprite('rains', true);
-	end
 end

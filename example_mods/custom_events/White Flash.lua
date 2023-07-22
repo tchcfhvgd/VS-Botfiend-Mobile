@@ -12,6 +12,8 @@ function onEvent(name, value1, value2)
 			setProperty('white.alpha', targetAlpha);
 		else
 			doTweenAlpha('whiteFadeEventTween', 'white', targetAlpha, duration, 'linear');
+			addLuaSprite('blue', true);
+	        addLuaSprite('rains', true);
 		end
 		--debugPrint('Event triggered: ', name, duration, targetAlpha);
 	end
