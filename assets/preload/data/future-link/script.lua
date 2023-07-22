@@ -7,22 +7,47 @@ function onUpdate()
     end
 end
 
+function spawnEndCard()
+    playMusic('breakfast', 1)
+    makeAnimatedLuaSprite('end', 'botfriend/Botfiend_End_Card', 0, 0);
+	addAnimationByPrefix('end', 'lol', 'Ending Card', 24, true)
+    setObjectCamera('end', 'other');
+    scaleLuaSprite('end', 1.0, 1.0);
+	makeLuaSprite('black', nil, 0, 0);
+    makeGraphic('black', screenWidth * 5, screenHeight * 5, '000000');
+	setObjectCamera('black', 'other');
+	addLuaSprite('black', true);
+	addLuaSprite('end', true);
+	playAnim('end', 'lol')
+end
+
+function onTimerCompleted(tag, loops, loopsLeft)
+	if tag == 'sus' then
+	addLuaSprite('boom', true);
+	playSound('explosion');
+	playAnim('boyfriend', 'hurt', true)
+	setProperty('boyfriend.specialAnim', true)
+	end
+	if tag == 'die' then
+	playAnim('dad', 'bout', true)
+	setProperty('dad.specialAnim', true)
+	playAnim('gf', 'scared', true)
+	setProperty('gf.specialAnim', true)
+	end
+	if tag == 'endcard' then
+	stopSound('explosion');
+	spawnEndCard()
+	cool = true
+	end
+end
 
 function onEndSong()
         if not cool then
-            playMusic('breakfast', 1)
-            makeAnimatedLuaSprite('end', 'botfriend/Botfiend_End_Card', 0, 0);
-			addAnimationByPrefix('end', 'lol', 'Ending Card', 24, true)
-            setObjectCamera('end', 'other');
-			scaleLuaSprite('end', 1.0, 1.0);
-			makeLuaSprite('black', nil, 0, 0);
-		    makeGraphic('black', screenWidth * 5, screenHeight * 5, '000000');
-		    setObjectCamera('black', 'other');
-		    addLuaSprite('black', true);
-			addLuaSprite('end', true);
-			playAnim('end', 'lol')
-            cool = true
-            return Function_Stop;
+			playSound('uh oh');
+			runTimer('die', 3.85);
+			runTimer('sus', 8);
+			runTimer('endcard', 8.5);
+			return Function_Stop;
         end
         return Function_Continue;
 end
