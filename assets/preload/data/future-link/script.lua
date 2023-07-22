@@ -31,8 +31,10 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	if tag == 'die' then
 	playAnim('dad', 'bout', true)
 	setProperty('dad.specialAnim', true)
-	playAnim('gf', 'scared', true)
-	setProperty('gf.specialAnim', true)
+		playAnim('boyfriend', 'excited', false)
+	    setProperty('boyfriend.specialAnim', true)
+		playAnim('gf', 'shit', false)
+	    setProperty('gf.specialAnim', true)
 	end
 	if tag == 'endcard' then
 	stopSound('explosion');
@@ -45,6 +47,10 @@ function onEndSong()
         doTweenAlpha('hudgobye', 'camHUD', 0, 0.5, 'easeIn')
 		if not cool and isStoryMode then
 			playSound('uh oh');
+			playAnim('gf', 'fuck', false)
+	        setProperty('gf.specialAnim', true)
+			playAnim('boyfriend', 'looking', false)
+	        setProperty('boyfriend.specialAnim', true)
 			runTimer('die', 3.85);
 			runTimer('sus', 8);
 			runTimer('endcard', 8.5);
