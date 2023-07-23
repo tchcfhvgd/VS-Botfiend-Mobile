@@ -117,6 +117,7 @@ class MainMenuState extends MusicBeatState
 		bg.setGraphicSize(Std.int(bg.width * 1.175));
 		bg.updateHitbox();
 		bg.screenCenter();
+		bg.y = bg.y - 2;
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 
