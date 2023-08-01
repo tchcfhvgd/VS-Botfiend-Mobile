@@ -36,32 +36,33 @@ end
 
 function onTimerCompleted(tag, loops, loopsLeft)
 	if tag == 'start' then
-	doTweenAlpha('hudgohi', 'camHUD', 1, 0.5, 'easeIn')
+	doTweenAlpha('hudgohi', 'camHUD', 1, 0.5, 'easeIn');
 	allowCountdown = true;
 	startCountdown()
+	removeLuaSprite('white1', true);
 	end
 	if tag == 'thunder' then
-	    playSound('thunder_1')
-		setProperty("white1.alpha", 255)
+	    playSound('thunder_1');
+		setProperty("white1.alpha", 255);
 		doTweenAlpha('TEST', 'white1', 0, 0.5, 'linear');
 	end
 	if tag == 'thunder2' then
-		setProperty("white1.alpha", 255)
+		setProperty("white1.alpha", 255);
 		doTweenAlpha('TEST', 'white1', 0, 0.5, 'linear');
 	end
 	if tag == 'sus' then
 	addLuaSprite('boom', true);
 	playSound('explosion');
-	playAnim('boyfriend', 'hurt', true)
-	setProperty('boyfriend.specialAnim', true)
+	playAnim('boyfriend', 'hurt', true);
+	setProperty('boyfriend.specialAnim', true);
 	end
 	if tag == 'die' then
-	playAnim('dad', 'bout', true)
-	setProperty('dad.specialAnim', true)
-		playAnim('boyfriend', 'excited', false)
-	    setProperty('boyfriend.specialAnim', true)
-		playAnim('gf', 'shit', false)
-	    setProperty('gf.specialAnim', true)
+	playAnim('dad', 'bout', true);
+	setProperty('dad.specialAnim', true);
+		playAnim('boyfriend', 'excited', false);
+	    setProperty('boyfriend.specialAnim', true);
+		playAnim('gf', 'shit', false);
+	    setProperty('gf.specialAnim', true);
 	end
 	if tag == 'endcard' then
 	stopSound('explosion');
@@ -71,13 +72,13 @@ function onTimerCompleted(tag, loops, loopsLeft)
 end
 
 function onEndSong()
-        doTweenAlpha('hudgobye', 'camHUD', 0, 0.5, 'easeIn')
+        doTweenAlpha('hudgobye', 'camHUD', 0, 0.5, 'easeIn');
 		if not cool and isStoryMode then
 			playSound('uh oh');
-			playAnim('gf', 'fuck', false)
-	        setProperty('gf.specialAnim', true)
-			playAnim('boyfriend', 'looking', false)
-	        setProperty('boyfriend.specialAnim', true)
+			playAnim('gf', 'fuck', false);
+	        setProperty('gf.specialAnim', true);
+			playAnim('boyfriend', 'looking', false);
+	        setProperty('boyfriend.specialAnim', true);
 			runTimer('die', 3.85);
 			runTimer('sus', 8);
 			runTimer('endcard', 8.5);
