@@ -9,7 +9,7 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	   cameraSetTarget('dad');
 	   playAnim('dad', 'hey', false);
 	   playSound('Botyeah');
-	   playAnim('boyfriend', 'Idle', false);
+	   playAnim('boyfriend', 'idle', true);
 	end
 	if tag == 'camtrans' then
 	   cameraSetTarget('boyfriend');
