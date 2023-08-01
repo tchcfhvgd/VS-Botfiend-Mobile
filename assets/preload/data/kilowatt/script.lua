@@ -23,10 +23,8 @@ function onEndSong()
 		if isStoryMode then
 		
 		if stops == 0 then
-			doTweenAlpha('hudgobye', 'camHUD', 0, 0.5, 'easeIn')
-			playAnim('dad', 'hey', false)
-			playAnim('boyfriend', 'hey', false)
-			runTimer('transition', 5.0);
+			doTweenAlpha('hudgobye', 'camHUD', 0, 0.5, 'easeIn')			
+			runTimer('transition', 0.55);
 		end
 
 		if stops == 1 then

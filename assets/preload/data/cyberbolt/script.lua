@@ -1,6 +1,19 @@
 local stops = 0
 local endstops = 0
 function onTimerCompleted(tag, loops, loopsLeft)
+	if tag == 'bfheying' then
+	   playAnim('boyfriend', 'hey', false);
+	   playSound('BFyeah');
+	end
+	if tag == 'bot' then
+	   cameraSetTarget('dad');
+	   playAnim('dad', 'hey', false);
+	   playSound('Botyeah');
+	   playAnim('boyfriend', 'Idle', false);
+	end
+	if tag == 'camtrans' then
+	   cameraSetTarget('boyfriend');
+	end
 	if tag == 'transition' then
 	endSong()
 	end
@@ -11,9 +24,10 @@ function onEndSong()
 		
 		if stops == 0 then
 			doTweenAlpha('hudgobye', 'camHUD', 0, 0.5, 'easeIn')
-			playAnim('dad', 'hey', false)
-			playAnim('boyfriend', 'hey', false)
-			runTimer('transition', 5.0);
+			runTimer('bfheying', 0.0);
+			runTimer('bot', 1.25);
+			runTimer('camtrans', 2.5);
+			runTimer('transition', 4.5);
 		end
 
 		if stops == 1 then

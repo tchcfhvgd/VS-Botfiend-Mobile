@@ -1,10 +1,23 @@
+local stops = 0
+local endstops = 0
 local cool = false
+local allowCountdown = false
 function onUpdate()
     if cool then
         if keyJustPressed('accept') then
             endSong()
         end
     end
+end
+
+function onCreatePost()
+   if isStoryMode then
+    makeLuaSprite('white1', nil, -500, -200);
+	makeGraphic('white1', screenWidth * 4, screenHeight * 4, 'FFFFFF');
+    setProperty("camHUD.alpha", 0)
+	setProperty("white1.alpha", 0)
+	addLuaSprite('white1', true);
+   end
 end
 
 function spawnEndCard()
@@ -22,6 +35,20 @@ function spawnEndCard()
 end
 
 function onTimerCompleted(tag, loops, loopsLeft)
+	if tag == 'start' then
+	doTweenAlpha('hudgohi', 'camHUD', 1, 0.5, 'easeIn')
+	allowCountdown = true;
+	startCountdown()
+	end
+	if tag == 'thunder' then
+	    playSound('thunder_1')
+		setProperty("white1.alpha", 255)
+		doTweenAlpha('TEST', 'white1', 0, 0.5, 'linear');
+	end
+	if tag == 'thunder2' then
+		setProperty("white1.alpha", 255)
+		doTweenAlpha('TEST', 'white1', 0, 0.5, 'linear');
+	end
 	if tag == 'sus' then
 	addLuaSprite('boom', true);
 	playSound('explosion');
@@ -57,4 +84,28 @@ function onEndSong()
 			return Function_Stop;
         end
         return Function_Continue;
+end
+
+function onStartCountdown()
+   if isStoryMode and not allowCountdown and not seenCutscene then
+		setProperty('inCutscene', true);
+		if stops == 0 then
+			runTimer('thunder', 0);
+			runTimer('thunder2', 0.5);
+			runTimer('start', 3.25);
+			seenCutscene = true;
+		end
+
+		if stops == 1 then
+		allowCountdown = true;
+        return Function_Continue;
+		end
+	stops  = stops + 1
+		return Function_Stop;
+	end
+	
+	if isStoryMode and seenCutscene then
+	doTweenAlpha('hudgohi', 'camHUD', 1, 0.5, 'easeIn');
+	end
+	return Function_Continue;
 end
