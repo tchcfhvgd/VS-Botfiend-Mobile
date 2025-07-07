@@ -8,8 +8,6 @@ using StringTools;
 
 class PreSongCutscene extends FlxState
 {
-	var oldFPS:Int = VideoHandler.MAX_FPS;
-	var video:VideoHandler;
 	var PlayState = new PlayState();
 
 	override public function create():Void
@@ -17,21 +15,7 @@ class PreSongCutscene extends FlxState
 
 		super.create();
 
-		VideoHandler.MAX_FPS = 60;
-
-		video = new VideoHandler();
-
-		video.playMP4(Paths.video('cutscene'), function(){
-			next();
-			#if web
-				VideoHandler.MAX_FPS = oldFPS;
-			#end
-		}, false, false);
-
-		video.updateHitbox();
-		video.setPosition(0,0);
-        video.antialiasing = ClientPrefs.globalAntialiasing;
-		add(video);
+		startVideo('cutscene');
 	}
 
 	override public function update(elapsed:Float){
@@ -42,6 +26,39 @@ class PreSongCutscene extends FlxState
 
 	function next():Void{
 		FlxG.switchState(PlayState);
+	}
+	
+	public function startVideo(name:String)
+	{
+		#if VIDEOS_ALLOWED
+
+		var filepath:String = Paths.video(name);
+		#if sys
+		if(!FileSystem.exists(filepath))
+		#else
+		if(!OpenFlAssets.exists(filepath))
+		#end
+		{
+			FlxG.log.warn('Couldnt find video file: ' + name);
+			next();
+			return;
+		}
+
+		var video:FlxVideo = new FlxVideo();
+		video.load(filepath);
+		video.play();
+		video.onEndReached.add(function()
+		{
+			video.dispose();
+			next();
+			return;
+		}, true);
+
+		#else
+		FlxG.log.warn('Platform not supported!');
+		next();
+		return;
+		#end
 	}
 	
 }
