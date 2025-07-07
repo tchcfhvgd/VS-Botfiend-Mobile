@@ -253,7 +253,7 @@ class StoryMenuState extends MusicBeatState
 				touchPad.active = touchPad.visible = persistentUpdate = false;
 				openSubState(new GameplayChangersSubstate());
 			}
-			else if(controls.RESET )|| touchPad.buttonY.justPressed
+			else if(controls.RESET || touchPad.buttonY.justPressed)
 			{
 				touchPad.active = touchPad.visible = persistentUpdate = false;
 				openSubState(new ResetScoreSubState('', curDifficulty, '', curWeek));
