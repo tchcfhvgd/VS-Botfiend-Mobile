@@ -4,6 +4,18 @@ import flixel.FlxG;
 import flixel.FlxState;
 import flixel.util.FlxColor;
 
+#if sys
+import sys.FileSystem;
+import sys.io.File;
+#end
+
+#if VIDEOS_ALLOWED
+#if hxvlc
+import hxvlc.flixel.*;
+import hxvlc.util.*;
+#end
+#end
+
 using StringTools;
 
 class PreSongCutscene extends FlxState
