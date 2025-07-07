@@ -4,7 +4,7 @@ local cool = false
 local allowCountdown = false
 function onUpdate()
     if cool then
-        if keyJustPressed('accept') then
+        if keyJustPressed('accept') or touchPadJustPressed('A') then
             endSong()
         end
     end
@@ -32,6 +32,9 @@ function spawnEndCard()
 	addLuaSprite('black', true);
 	addLuaSprite('end', true);
 	playAnim('end', 'lol')
+	
+	addTouchPad("NONE", "A");
+	addTouchPadCamera();
 end
 
 function onTimerCompleted(tag, loops, loopsLeft)
